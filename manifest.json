@@ -1,0 +1,47 @@
+{
+  "art": [
+    {"slug": "cityscape", "title": "Cityscape"},
+    {"slug": "untitled", "title": "Untitled (Green)"},
+
+    {"slug": "2x trouble", "title": "Double Trouble"},
+
+    {"slug": "death from above i", "title": "Death From Above"},
+    {"slug": "i will abandon", "title": "I Will Abandon"},
+    
+  
+    {"slug": "untitled blue 1", "title": "Untitled Blue 1"},
+    {"slug": "untitled blue 2", "title": "Untitled Blue 2"},
+    {"slug": "untitled blue 3", "title": "Untitled Blue 3"},
+    {"slug": "untitled blue 4", "title": "Untitled Blue 4"},
+    {"slug": "untitled blue 5", "title": "Untitled Blue 5"},
+
+    {"slug": "nobody move", "title": "Nobody Move"},
+
+    {"slug": "ec101", "title": "EC101"},
+    {"slug": "in half", "title": "In Half"},
+    {"slug": "untitled 2", "title": "Untitled 2"},
+    {"slug": "national debt", "title": "National Debt"},
+    
+
+    {"slug": "filler", "title": "Filler"},
+    {"slug": "pat on back", "title": "Pat on Back"}, 
+    {"slug": "untitled 7", "title": "Untitled 7"},
+    {"slug": "untitled 8", "title": "Untitled 8"},
+    {"slug": "untitled 6", "title": "Untitled 6"},
+
+    {"slug": "night", "title": "Night"},
+    {"slug": "untitled 5", "title": "Untitled 5"},
+
+    {"slug": "sketch for buy now", "title": "Sketch for Buy Now"},
+    {"slug": "sketch for classic and flamenco", "title": "Sketch for Classic and Flamenco"},
+    {"slug": "termina", "title": "Termina"},
+
+    {"slug": "untitled 10", "title": "Untitled 10"},
+    {"slug": "untitled 3", "title": "Untitled 3"},
+  
+
+    {"slug": "untitled 9", "title": "Untitled 9"},
+    {"slug": "untitled 4", "title": "Untitled 4"},
+    {"slug": "welcome to hell", "title": "Welcome to Hell"}
+  ]
+}

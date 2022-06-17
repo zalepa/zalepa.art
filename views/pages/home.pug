@@ -1,0 +1,10 @@
+extends ../layouts/default
+
+block main
+  .art-container
+    each work in art 
+      div.artwork
+        a(href="/img/full/" + work.slug + ".jpg")
+          img(src="/img/full/" + work.slug + ".jpg")
+        h1
+          =work.title
