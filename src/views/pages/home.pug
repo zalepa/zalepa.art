@@ -7,17 +7,7 @@ block main
         a(href="/img/full/" + work.slug + ".jpg")
           img(src="/img/full/" + work.slug + ".jpg")
         h1
-          span.title=work.title
-          | . 
-          span.medium=work.medium
-          | , 
+          span.title= work.title + '. '
+          span.medium=work.medium + ', '
           span.size
-            = work.height 
-            | " × 
-            = work.width
-            | "
-            | (
-            = work.height * 2.54
-            |  × 
-            = work.width * 2.54
-            |  cm)
+            = work.height + "\" × " + work.width + "\" (" + (work.height * 2.54) + " × " + (work.width * 2.54) + " cm)"
