@@ -12,4 +12,8 @@ app.get('/', (req, res) => {
   res.render('pages/home', { art });
 });
 
+app.get('/qr', (req, res) => {
+  res.render('pages/qr');
+});
+
 module.exports = app;
