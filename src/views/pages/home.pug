@@ -5,9 +5,9 @@ block main
     each work in art 
       div.artwork
         a(href="/img/full/" + work.slug + ".jpg")
-          img(src="/img/full/" + work.slug + ".jpg")
+          img(src="/img/full/" + work.slug + ".jpg" width=work.displayPercentage+"%")
         h1
           span.title= work.title + '. '
           span.medium=work.medium + ', '
           span.size
-            = work.height + "\" × " + work.width + "\" (" + (work.height * 2.54) + " × " + (work.width * 2.54) + " cm)"
+            = work.width + "\" × " + work.height + "\" (" + (work.width * 2.54) + " × " + (work.height * 2.54) + " cm)"
