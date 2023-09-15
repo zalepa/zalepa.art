@@ -23,8 +23,6 @@ app.get('/', (req, res) => {
       return a;
     });
 
-    console.log(augmentedArtworks[0]);
-
     return artworks;
   }
 
