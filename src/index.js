@@ -39,6 +39,10 @@ app.get('/untitled', (_, res) =>{
   res.render('pages/untitled');
 })
 
+app.get('/untitled.', (_, res) =>{
+  res.render('pages/untitled');
+})
+
 app.get('/qr', (req, res) => {
   res.render('pages/qr');
 });
