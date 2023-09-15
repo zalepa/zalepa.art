@@ -44,3 +44,31 @@ footer p {
 span.title {
   font-style: italic;
 }
+
+/* 
+UNTITLED
+*/
+
+section#untitled p {
+  width:500px;
+  margin-bottom: 12rem;
+}
+
+section#untitled h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+section#untitled .work {
+  margin-bottom: 12em;
+}
+
+section#untitled .work h1 {
+  font-size: 0.75em;
+  font-weight: 300;
+  letter-spacing: 0.09em;
+}
+
+span.title {
+  font-style: italic;
+}
