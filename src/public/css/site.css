@@ -48,6 +48,11 @@ span.title {
 /* 
 UNTITLED
 */
+section#untitled h1 {
+  margin-bottom: 0;
+}
+
+section#untitled h2 { font-weight: 100; font-size: 2rem;}
 
 section#untitled p {
   width:500px;
