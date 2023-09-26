@@ -6,23 +6,21 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title George Zalepa
     link(rel="stylesheet" href="/css/site.css")
-    //- Global site tag (gtag.js) - Google Analytics
-  script(async src="https://www.googletagmanager.com/gtag/js?id=G-YFK86CKN2M")
-  script
-    | window.dataLayer = window.dataLayer || [];
-    | function gtag(){dataLayer.push(arguments);}
-    | gtag('js', new Date());
-    | gtag('config', 'G-YFK86CKN2M');
-</script>
-  body 
-    header 
-      h1 
-        | George Zalepa
-        small: a(href="https://instagram.com/georgezalepa"): img(src="/img/icons/insta.svg" width="30" style="padding-left:0.5em")
-    block main
-    footer 
-      p 
-       | © 2001 - 
-       = (new Date()).getFullYear()
-       |  George Zalepa 
-       a(href="mailto:george@zalepa.org") contact
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-YFK86CKN2M")
+    script
+      | window.dataLayer = window.dataLayer || [];
+      | function gtag(){dataLayer.push(arguments);}
+      | gtag('js', new Date());
+      | gtag('config', 'G-YFK86CKN2M');
+
+  body.bg-gray-200
+    .container.mt-12.m-auto(class="lg:w-7/12 sm:w-full")
+      header.flex.flex-row
+        h1.text-4xl.text-slate-600.flex-grow George Zalepa 
+        nav
+          ul.flex.flex-row 
+            li.px-8.text-slate-600: a(href="#") Works
+            li.px-8.text-slate-600: a(href="#") Exhibits 
+            li.pl-8.text-slate-600: a(href="#") Contact
+      main 
+        block main
