@@ -11,7 +11,9 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="font-mono">
+    <%= render 'shared/admin_alert' %>
+    <%= render 'shared/notices' %>
     <main class="container mx-auto mt-28 px-5 flex">
       <%= yield %>
     </main>
