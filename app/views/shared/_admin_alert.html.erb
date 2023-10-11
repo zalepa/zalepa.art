@@ -1,6 +1,0 @@
-<% if user_signed_in? %>
-<p class=" p-2 text-cyan-100 text-xs text-center border-b-2 bg-cyan-600 border-cyan-500">
-  You are logged in as admin. 
-   <%= link_to 'Logout', destroy_user_session_path, data: { "turbo-method": :delete }, class: 'font-bold underline' %>
-</p>
-<% end %>

@@ -1,0 +1,16 @@
+<div class="flex flex-col w-9/12">
+  <% @art.each do |work| %>
+
+  <div class="mb-24">
+    <%= link_to image_path("full/#{work[:slug]}.jpg") do %>
+      <%= image_tag "full/#{work[:slug]}.jpg", width: "#{work[:display_percentage]}%" %>
+    <% end %>
+    <h1 class="text-gray-400">
+      <span class="italic"><%= work[:title] %>. </span>
+      <span><%= work[:medium] %>, </span>
+      <span><%= work[:width] %>" × <%= work[:height] %>" (<%= work[:width] * 2.54 %> × <%= work[:height] * 2.54 %> cm)</span>
+    </h1>
+  </div>
+
+  <% end %>
+</div>

@@ -9,13 +9,34 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFK86CKN2M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'G-YFK86CKN2M');
+    </script>
   </head>
 
-  <body class="font-mono">
-    <%= render 'shared/admin_alert' %>
-    <%= render 'shared/notices' %>
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="p-8">
+
+    <header class="flex flex-row p-8 font-thin uppercase py-10 text-3xl my-10">
+        <h1>George Zalepa</h1>
+        <%= link_to 'https://instagram.com/georgezalepa' do %>
+          <%= image_tag 'icons/insta.svg', class: 'w-8 ml-3 mt-1' %>
+        <% end  %>
+    </header>
+    <main class="container flex">
       <%= yield %>
     </main>
+    <footer>
+        <p class="text-xs my-2">
+          © 2001 - 2023 George Zalepa
+          <a class="text-cyan-800 underline" href="mailto:george@zalepa.org">contact</a>
+        </p>
+    </footer>   
   </body>
 </html>
