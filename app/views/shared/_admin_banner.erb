@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+  <p class="bg-sky-300 border-b-sky-700 border text-sky-950 text-center text-xs p-2">
+    You are Logged In. 
+    <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'underline', data: { turbo_method: :delete } %>
+  </p>
+<% end %>
