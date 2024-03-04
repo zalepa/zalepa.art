@@ -1,29 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ZalepaArt</title>
+    <title>George Zalepa | Omnitemporal Expressionism</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+    <%= csp_meta_tag   %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YFK86CKN2M"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-YFK86CKN2M');
-    </script>
+    <%= render 'shared/google_analytics' %>
   </head>
 
   <body>
-    <%= render 'shared/admin_banner' %>
-    <%= render 'shared/notice_pane' %>
+    <% if user_signed_in? %>
+      <%= render 'shared/admin_banner' %>
+      <%= render 'shared/notice_pane' %>
+    <% end %>
+    
     <%= render 'shared/header' %>
 
     <main class="container flex m-8">
