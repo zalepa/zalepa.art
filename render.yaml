@@ -1,16 +1,23 @@
+databases:
+  - name: zalepa_art
+    databaseName: zalepa_art_production
+    user: zalepa_art
+    plan: starter
+
 services:
   - type: web
     name: zalepa_art
     runtime: ruby
-    region: ohio
+    plan: starter
     buildCommand: "./bin/render-build.sh"
-    startCommand: "bundle exec puma -C config/puma.rb"
-    healthCheckPath: /up
+    # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
+    startCommand: "bundle exec rails server"
     envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: zalepa_art
+          property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-databases:
-  - name: zalepa_art_production
-    plan: starter
-    region: ohio
-    postgresMajorVersion: 14
+      - key: WEB_CONCURRENCY
+        value: 2 # sensible default
