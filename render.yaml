@@ -2,12 +2,15 @@ services:
   - type: web
     name: zalepa_art
     runtime: ruby
+    region: ohio
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
+    healthCheckPath: /up
     envVars:
       - key: RAILS_MASTER_KEY
         sync: false
 databases:
   - name: zalepa_art_production
     plan: starter
+    region: ohio
     postgresMajorVersion: 14
