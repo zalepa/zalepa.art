@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   def home
-    @works = Work.all
+    @works = Work.order(:year, :id)
   end
 
   def untitled; end
