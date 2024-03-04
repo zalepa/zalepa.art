@@ -9,5 +9,5 @@ services:
         sync: false
 databases:
   - name: zalepa_art_production
-    plan: free
+    plan: starter
     postgresMajorVersion: 14
