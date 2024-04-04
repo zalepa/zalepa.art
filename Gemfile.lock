@@ -135,7 +135,6 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    pg (1.5.6)
     public_suffix (5.0.3)
     puma (5.6.7)
       nio4r (~> 2.0)
@@ -197,6 +196,7 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
+    sqlite3 (1.7.2-arm64-darwin)
     stimulus-rails (1.3.0)
       railties (>= 6.0.0)
     tailwindcss-rails (2.0.31-arm64-darwin)
@@ -236,12 +236,12 @@ DEPENDENCIES
   devise (~> 4.9)
   importmap-rails
   jbuilder
-  pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.8)
   rails_live_reload
   selenium-webdriver
   sprockets-rails
+  sqlite3 (~> 1.4)
   stimulus-rails
   tailwindcss-rails
   turbo-rails
